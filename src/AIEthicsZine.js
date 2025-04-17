@@ -27,7 +27,7 @@ export default function AIEthicsZine() {
   <img 
     src="https://i.imgur.com/y0bjaf0.png" 
     alt="ASCII robot in nature" 
-    className="mx-auto w-64 border-2 border-black shadow-md"
+    className="mx-auto max-w-xs w-full border-2 border-black shadow-md"
   />
 </div>
 
@@ -70,7 +70,6 @@ export default function AIEthicsZine() {
             onChange={(e) => setQuestion(e.target.value)}
             className="mb-3 border-black px-3 py-2 text-sm"
           />
-          <Button variant="outline" className="w-full border-black hover:bg-black hover:text-white transition text-sm">Submit</Button>
         </div>
               <div className="border-4 border-dashed border-black p-6 rotate-[1deg] bg-white shadow-[4px_4px_0_0_rgba(0,0,0,1)] text-center">
           <h2 className="text-base font-extrabold uppercase mb-4">Contribute to the next issue</h2>
