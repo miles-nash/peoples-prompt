@@ -1,6 +1,12 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+const Button = ({ children, className = '', ...props }) => (
+  <button className={`border px-4 py-2 bg-white hover:bg-black hover:text-white transition ${className}`} {...props}>
+    {children}
+  </button>
+);
+
+const Input = ({ className = '', ...props }) => (
+  <input className={`border px-3 py-2 text-sm w-full ${className}`} {...props} />
+);
 import { useState } from "react";
 
 export default function AIEthicsZine() {
