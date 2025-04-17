@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const Button = ({ children, className = '', ...props }) => (
   <button className={`border px-4 py-2 bg-white hover:bg-black hover:text-white transition ${className}`} {...props}>
     {children}
@@ -7,7 +9,7 @@ const Button = ({ children, className = '', ...props }) => (
 const Input = ({ className = '', ...props }) => (
   <input className={`border px-3 py-2 text-sm w-full ${className}`} {...props} />
 );
-import { useState } from "react";
+
 
 export default function AIEthicsZine() {
   const [question, setQuestion] = useState("");
@@ -78,7 +80,7 @@ export default function AIEthicsZine() {
             <li>📰 Micro-essays or fake headlines</li>
             <li>🌲 Photos of analog tech in the wild</li>
           </ul>
-          <p className="text-sm mt-4 italic">Email us at <span className="underline">peoplesprompt.org</span> or leave a submission in the campus box (coming soon).</p>
+          <p className="text-sm mt-4 italic">Email us at <a href="https://peoplesprompt.org" className="underline">peoplesprompt.org</a> or leave a submission in the campus box (coming soon).</p>
         </div>
       </section>
 
