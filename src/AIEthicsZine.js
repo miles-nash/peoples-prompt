@@ -45,24 +45,25 @@ export default function AIEthicsZine() {
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-10">
         <div className="border-4 border-black p-6 shadow-[6px_6px_0_0_rgba(0,0,0,1)] rotate-[-6deg] bg-white">
-          <blockquote className="text-xl font-bold">“AI can help me write, but it can’t help me feel. Yet.”</blockquote>
+          <blockquote className="text-xl font-bold">“AI can help me write, but it can't help me think yet.”</blockquote>
           <p className="mt-4 text-sm text-right">– Computer Science major, UC Berkeley</p>
         </div>
 
         <div className="border-4 border-black p-6 shadow-[4px_4px_0_0_rgba(0,0,0,1)] rotate-[4deg] bg-white">
           <blockquote className="text-xl font-semibold">“I worry that AI is just another excuse to ignore real people.”</blockquote>
-          <p className="mt-4 text-xs text-right">– Local artist, Oakland</p>
+          <p className="mt-4 text-xs text-right">– ChatGPT</p>
         </div>
 
-        <div className="border-[3px] border-black p-5 rotate-[-4deg] bg-white shadow-[4px_4px_0_0_rgba(0,0,0,1)] skew-y-2">
-          <h2 className="text-base font-extrabold uppercase mb-4 underline">How do people feel about AI?</h2>
-          <ul className="list-none pl-0 text-sm space-y-2">
-            <li><span className="font-bold">Curious</span>: 40%</li>
-            <li><span className="font-bold">Skeptical</span>: 25%</li>
-            <li><span className="font-bold">Inspired</span>: 15%</li>
-            <li><span className="font-bold">Afraid</span>: 20%</li>
-          </ul>
-        </div>
+        <div className="border-[3px] border-black p-5 rotate-[-4deg] bg-white shadow-[4px_4px_0_0_rgba(0,0,0,1)] skew-y-2 text-sm">
+  <h2 className="text-base font-extrabold uppercase mb-4 underline">Signals from the Promptstream</h2>
+  <p className="mb-3 italic">What does the machine age feel like from where you stand?</p>
+  <ul className="list-disc list-inside space-y-2">
+    <li>“Like holding my breath during a software update.”</li>
+    <li>“Excited, but tired of being excited.”</li>
+    <li>“Feels like standing next to something bigger than I can name.”</li>
+    <li>“Everything’s faster. Nothing’s clearer.”</li>
+  </ul>
+</div>
 
         <div className="border-[3px] border-black p-6 rotate-[3deg] bg-white shadow-[3px_3px_0_0_rgba(0,0,0,1)] skew-x-2">
           <h2 className="text-base font-bold uppercase mb-3">What do you hope AI never replaces?</h2>
@@ -74,16 +75,13 @@ export default function AIEthicsZine() {
           </ul>
         </div>
 
-        <div className="border-4 border-black p-8 rotate-[-2deg] bg-white shadow-[5px_5px_0_0_rgba(0,0,0,1)]">
-          <h2 className="text-base font-bold uppercase mb-3">Leave your mark</h2>
-          <Input 
-            placeholder="What's a question we should all be asking about AI?"
-            value={question}
-            onChange={(e) => setQuestion(e.target.value)}
-            className="mb-3 border-black px-3 py-2 text-sm"
-          />
-          <Button variant="outline" className="w-full border-black hover:bg-black hover:text-white transition text-sm">Submit</Button>
-        </div>
+        <div className="border-4 border-black p-8 rotate-[-2deg] bg-white shadow-[5px_5px_0_0_rgba(0,0,0,1)] text-center">
+  <h2 className="text-base font-bold uppercase mb-4">Add your voice</h2>
+  <p className="text-sm mb-3">We’re collecting anonymous thoughts, fears, and ideas about AI from the Berkeley community.</p>
+  <a href="https://forms.gle/ruTnJcyYSj1HQ5qXA" target="_blank" rel="noopener noreferrer">
+    <Button className="w-full border-black hover:bg-black hover:text-white transition text-sm">Submit via Google Form</Button>
+  </a>
+</div>
               <div className="border-4 border-dashed border-black p-6 rotate-[1deg] bg-white shadow-[4px_4px_0_0_rgba(0,0,0,1)] text-center">
           <h2 className="text-base font-extrabold uppercase mb-4">Contribute to the next issue</h2>
           <p className="text-sm mb-3">This zine lives off scraps, sparks, and strangers. Send us:</p>
@@ -94,7 +92,7 @@ export default function AIEthicsZine() {
             <li>📰 Micro-essays or fake headlines</li>
             <li>🌲 Photos of analog tech in the wild</li>
           </ul>
-          <p className="text-sm mt-4 italic">Email us at <a href="https://peoplesprompt.org" className="underline">peoplesprompt.org</a> or leave a submission in the campus box (coming soon).</p>
+          <p className="text-sm mt-4 italic">Email us at <a href="mailto:peoplesprompt@gmail.com" className="underline">peoplesprompt@gmail.com</a>.</p>
         </div>
       </section>
 
@@ -143,3 +141,4 @@ export default function AIEthicsZine() {
     </div>
   );
 }
+
